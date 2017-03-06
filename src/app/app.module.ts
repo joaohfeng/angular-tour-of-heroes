@@ -3,15 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 
 import { AppComponent }  from './app.component';
+import { HeroDetailComponent  } from './hero-detail.component';
 
 @NgModule({
   imports:[
 	BrowserModule,
-	FormsModule 
+	FormsModule
   ],
- 
+
  declarations:[
-	AppComponent
+	AppComponent,
+	HeroDetailComponent
   ],
 
   bootstrap:[

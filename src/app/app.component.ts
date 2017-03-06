@@ -1,11 +1,5 @@
 import { Component } from '@angular/core';
-
-export class Hero{
-  id: number;
-  name: string;
-
-};
-
+import { Hero } from './hero';
 
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
@@ -88,6 +82,7 @@ console.log(HEROES);
         </li>
 
     </ul>
+    <my-hero-detail [hero]="selectedHero"></my-hero-detail>
     <div *ngIf="selectedHero">
         <h2>{{selectedHero.name}} details!</h2>
         <div> <label> id: </label> {{selectedHero.id}}  </div>
@@ -113,5 +108,4 @@ export class AppComponent {
         this.selectedHero = hero;
 
   }
-
 }
