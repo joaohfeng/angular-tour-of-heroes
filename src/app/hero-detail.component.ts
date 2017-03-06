@@ -16,5 +16,12 @@ import { Hero } from './hero';
 
 })
 export class HeroDetailComponent {
-    hero: Hero;
+  @Input()
+  hero: Hero;
+
 }
+
+
+
+
+
