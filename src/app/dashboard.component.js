@@ -24,8 +24,8 @@ var DashboardComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'my-dashboard',
-            templateUrl: '.dashboard.component.html',
-            template: "<h3>Top Heroes</h3>\n                <div class=\"grid grid-pad\">\n                    <a *ngFor=\"let hero of heroes\" [routerLink]=\"['/detail',hero.id]\"class=\"col-1-4\">\n                        <a class=\"module hero\">\n                            <h4>{{hero.name}}</h4>\n                        </a>\n                    </a>\n                </div>\n      "
+            styleUrls: ["./dashboard.component.css"],
+            templateUrl: './dashboard.component.html'
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService])
     ], DashboardComponent);
