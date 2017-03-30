@@ -11,8 +11,6 @@ import { Router } from '@angular/router'
     providers: [HeroService]
 })
 
-
-
 export class HeroesComponent implements OnInit{
 
   title  = 'Tour of Heroes';
